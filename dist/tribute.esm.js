@@ -878,7 +878,7 @@ class TributeRange {
     }
 
     isContentEditable(element) {
-        return element.nodeName !== 'INPUT' && element.nodeName !== 'TEXTAREA'
+        return element && (element.nodeName !== 'INPUT' && element.nodeName !== 'TEXTAREA')
     }
 
     isMenuOffScreen(coordinates, menuDimensions) {
